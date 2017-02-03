@@ -11,11 +11,11 @@ type Token struct {
 func (t *Token) toString() string {
 	var buffer bytes.Buffer
 
-	buffer.WriteString("Token({")
+	buffer.WriteString("Token({type='")
 	buffer.WriteString(t.type_)
-	buffer.WriteString("}, {")
+	buffer.WriteString("'}, {value='")
 	buffer.WriteString(t.value_)
-	buffer.WriteString("})")
+	buffer.WriteString("'})")
 
 	return buffer.String()
 }
